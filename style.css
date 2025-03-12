@@ -15,6 +15,7 @@
     position: fixed;
     width: 100%;
     padding: 15px 30px;
+    margin-bottom: 10px;
 }
 
 .navbar a {
@@ -35,22 +36,22 @@
 }
 .item {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    border: 1px solid black;
+    border-radius: 8px;
     flex-direction: column;
     width: 300px;
     height: 300px;
     
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     position: relative;
-    margin: 0 25px;
+    margin: 30px 25px;
 }
 .item:hover {
     transform: scale(1.1);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .container {
-    padding: 70px;
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
     background: lightgrey;
@@ -66,9 +67,11 @@ footer {
     margin-top: 20px;
 }
 p {
-    font-size: 20px;
     text-align: center;
+    margin: 10px;
+    
 }
+/* tried to make the text in the card centered 
 .item p {
     position: absolute;
     transform: translate(-50%, -50%);
@@ -82,6 +85,7 @@ p {
 .item:hover p {
     opacity: 1;
 }
+*/
 #hero {
     
     background-size: cover;
@@ -123,4 +127,49 @@ p {
     0%, 100% { opacity: 0; }
     25% { opacity: 1; }
     50% { opacity: 0; }
+}
+footer {
+    background: #333;
+    padding: 15px 30px;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 20px;
+}
+.footer-column h3 {
+    margin-bottom: 10px;
+}
+.footer-column li {
+    list-style: none;
+    padding: 0;
+}
+.footer-column a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+.footer-column a:hover {
+    text-decoration: underline;
+}
+.footer-bottom {
+    margin-top: 10px;    
+}
+.social-links {
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+.social-links a {
+   font-size: 24px;
+   margin-right: 10px;
+   transition: transform 0.3s ease-in-out colour 0.3s ease-in-out;
+}
+.social-links a:hover {
+    color: #eb0505;
 }
